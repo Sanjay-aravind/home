@@ -126,7 +126,7 @@ const Home = () => {
       {/* Chat Room Section */}
       <div className="chat-room">
         <p>Join our course chat room</p>
-        <input type="text" placeholder="Enter name" />
+        <input type="text" placeholder="Ask a Doubt" />
         <button className="search-button">🔍</button>
       </div>
 

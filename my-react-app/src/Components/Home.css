@@ -1,7 +1,7 @@
 /* General Fix */
 /* Set the entire page background */
 body {
-  background-color:white; /* Change this to any color you prefer */
+  background-color: white; /* Change this to any color you prefer */
   margin: 0;
   padding: 0;
 }
@@ -29,26 +29,23 @@ body {
   padding: 45px;
   border-radius: 20px;
   box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.3);
-  
-
 }
 
 /* Ensure Hero Content is Aligned */
-.hero-text h1{
+.hero-text h1 {
   width: 100%;
   text-align: left;
 }
-.hero-text p{
-  width:100%;
+.hero-text p {
+  width: 100%;
   text-align: left;
-  margin-top:30px;
+  margin-top: 30px;
 }
 .hero1-text {
   color: green;
 }
-.cta-button{
-
-  color:white;
+.cta-button {
+  color: white;
   background-color: green;
   margin-top: 30px;
   margin-left: -75%;
@@ -61,9 +58,7 @@ body {
 .hero-image img {
   width: 100%;
   border-radius: 20px;
-
 }
-
 
 /* Courses Carousel Fix */
 .courses-container {
@@ -75,7 +70,7 @@ body {
   margin: 30px 0;
   position: relative;
 }
-.categories{
+.categories {
   margin-top: 5%;
   margin-bottom: 3%;
 }
@@ -83,14 +78,14 @@ body {
 /* Tech Stack Section */
 .techstack-wrapper {
   position: relative;
-  width: 100%;
-  background-color:white; /* Updated Background */
+  width: 100vw; /* Full width of viewport */
+  background-color: white; /* Updated Background */
   padding: 30px 0;
   overflow: hidden;
 }
 
 .techstack-container {
-  width: 100%;
+  width: 100vw; /* Full width of viewport */
   display: flex;
   overflow: hidden;
   position: relative;
@@ -119,14 +114,14 @@ body {
 
 /* Tech Stack Item */
 .techstack-item {
-  background:white;
-  color:green;
+  background: white;
+  color: green;
   padding: 12px 24px;
   border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid ;
+  border: 1px solid;
 }
 
 /* Continuous Scrolling Animations */
@@ -226,11 +221,296 @@ body {
   background: #e68900;
 }
 
-footer {
+f/* General Fix */
+/* Set the entire page background */
+body {
+  background-color: white; /* Change this to any color you prefer */
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Pushes footer to the bottom */
   width: 100%;
+  min-height: 100vh; /* Ensures full screen height */
+  padding-top: 90px; /* ✅ Navbar height adjust */
+}
+
+/* Hero Section Fix */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 10px;
+  background: white;
+  color: black;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure Hero Content is Aligned */
+.hero-text h1 {
+  width: 100%;
+  text-align: left;
+}
+.hero-text p {
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+}
+.hero1-text {
+  color: green;
+}
+.cta-button {
+  color: white;
+  background-color: green;
+  margin-top: 30px;
+  margin-left: -75%;
+}
+
+.hero-image {
+  width: 40%;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Courses Carousel Fix */
+.courses-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px 0;
+  position: relative;
+}
+.categories {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+/* Tech Stack Section */
+.techstack-wrapper {
+  position: relative;
+  width: 100vw; /* Full width of viewport */
+  background-color: white; /* Updated Background */
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.techstack-container {
+  width: 100vw; /* Full width of viewport */
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    green 10%,
+    green 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #f0f0f0 10%,
+    #f0f0f0 90%,
+    transparent
+  );
+}
+
+.techstack-carousel {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+/* Tech Stack Item */
+.techstack-item {
+  background: white;
+  color: green;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid;
+}
+
+/* Continuous Scrolling Animations */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.scroll-left {
+  animation: scroll-left 50s linear infinite;
+}
+
+.scroll-right {
+  animation: scroll-right 60s linear infinite;
+}
+
+/* Shadow Effect */
+.techstack-wrapper::before,
+.techstack-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+}
+
+.techstack-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(240, 240, 240, 1), transparent);
+}
+
+.techstack-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(240, 240, 240, 1), transparent);
+}
+
+.course-item {
+  background: whitesmoke;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  margin: 0 50px; /* Adds space between the two cards */
+  display: inline-block; /* Ensures cards stay inline */
+}
+
+.course-item:hover {
+  transform: scale(1.05);
+}
+
+.course-img {
+  width: 100%;
+  height: 150px;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.rating {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.language {
+  font-size: 14px;
+  opacity: 0.8;
+  display: block;
+}
+
+.view-details {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.view-details:hover {
+  background: #e68900;
+}
+.chat-room {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 50px;
+}
+
+.chat-room p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.chat-room input {
+  width: 85%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.chat-room input:focus {
+  border-color: #007bff;
+}
+
+.chat-room .search-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.chat-room .search-button:hover {
+  background: #0056b3;
+}
+
+/* Subtle shadow effect */
+.chat-room input,
+.chat-room .search-button {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+  width: 100vw; /* Ensures full viewport width */
   background: #222;
   color: white;
   padding: 15px;
   text-align: center;
   box-sizing: border-box;
+  position: relative; /* Ensures it doesn't get cut off */
+  left: 0;
+  height: 500px;
+  margin-bottom: -20px;
 }
