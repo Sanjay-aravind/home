@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Floating Navbar */
+.floating-navbar {
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Navigation Links */
+/* Centering Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.nav-icons :hover {
+  color: #007bff;
+}
+
+/* Search Bar */
+/* Search Bar */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 8px 15px;
+  width: 220px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-container:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.search-icon {
+  font-size: 16px;
+  color: #666;
+  position: absolute;
+  left: 12px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Left padding for icon */
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+
+.search-bar::placeholder {
+  color: #999;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+
+.search-bar:focus::placeholder {
+  color: #bbb;
+}
+
+
+/* Profile Dropdown */
+.profile-container {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 160px;
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border-radius: 6px;
+}
+
+.profile-dropdown li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.profile-dropdown li:hover {
+  background: #f0f0f0;
+  font-weight: 600;
+}
